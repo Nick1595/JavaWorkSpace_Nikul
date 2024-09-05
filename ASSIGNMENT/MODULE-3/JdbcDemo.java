@@ -193,7 +193,7 @@ class Question_2 implements ActionListener {
 			try
 			{
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignment", "root", "");
+				Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignmentDB", "root", "");
 				
 				//id
 				String id = tf1.getText().toString();
@@ -248,7 +248,7 @@ class Question_2 implements ActionListener {
 			try 
 			{
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignment","root","");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignmentDB","root","");
 				
 				String id = tf1.getText().toString();
 				int id2 = Integer.parseInt(id);
@@ -281,7 +281,7 @@ class Question_2 implements ActionListener {
 			try 
 			{
 				Class.forName("com.mysql.jdbc.Driver"); 
-				Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignment","root", "");
+				Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignmentDB","root", "");
 				
 				//id
 				String id = tf1.getText().toString();
@@ -345,7 +345,7 @@ class Question_2 implements ActionListener {
 			try 
 			{
 				Class.forName("com.mysql.jdbc.Driver"); 
-				Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignment","root", "");
+				Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignmentDB","root", "");
 				String sql = "select * from registration";
 				Statement stmt = connect.createStatement();
 
